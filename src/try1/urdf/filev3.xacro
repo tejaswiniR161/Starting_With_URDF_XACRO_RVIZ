@@ -99,6 +99,8 @@
 <joint name="six" type="continuous">
 <parent link="base"/>
 <child link="wheel_center"/>
+<limit effort="30" velocity="1"/>
+<axis xyz="0 0 1"/>
 </joint>
 
 <!--</xacro:macro>
@@ -142,6 +144,8 @@ meshes="package://gazebo_plugins/test/multi_robot_scenario/meshes/laser" />
 <joint name="five_${suffix}" type="continuous">
 <parent link="base"/>
 <child link="wheel_${suffix}"/>
+<limit effort="30" velocity="1"/>
+<axis xyz="0 0 1"/>
 </joint>
 
 </xacro:macro>

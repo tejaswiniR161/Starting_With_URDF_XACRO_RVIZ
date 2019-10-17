@@ -58,10 +58,10 @@
       <material name="white"/>
     </visual>
   </link>-->
-  <joint name="one" type="continuous">
-    <parent link="base"/>
-    <child link="laser_vert_bottom"/>
-  </joint>
+  <!--<joint name="one" type="continuous">
+<parent link="base"/>
+<child link="laser_vert_bottom"/>
+</joint>-->
   <!--<joint name="two" type="continuous">
 <parent link="base"/>
 <child link="laser_vert_top_right"/>
@@ -88,6 +88,8 @@
   <joint name="six" type="continuous">
     <parent link="base"/>
     <child link="wheel_center"/>
+    <limit effort="30" velocity="1"/>
+    <axis xyz="0 1 0"/>
   </joint>
   <!--</xacro:macro>
 <xacro:xacro_name suffix="center" reflect="1" />-->
@@ -368,6 +370,8 @@
   <joint name="five_left" type="continuous">
     <parent link="base"/>
     <child link="wheel_left"/>
+    <limit effort="30" velocity="1"/>
+    <axis xyz="0 1 0"/>
   </joint>
   <link name="wheel_right">
     <visual>
@@ -382,6 +386,8 @@
   <joint name="five_right" type="continuous">
     <parent link="base"/>
     <child link="wheel_right"/>
+    <limit effort="30" velocity="1"/>
+    <axis xyz="0 1 0"/>
   </joint>
   <!--<origin xyz="-0.10 ${reflect * 0.4} 0.0" />-->
 </robot>
