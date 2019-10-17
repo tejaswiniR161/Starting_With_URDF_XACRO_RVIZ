@@ -3,10 +3,10 @@
 ### 2. roslaunch try1 display.launch use_xacro:=true
 ### 3. roslaunch try1 display.launch
 
-#### The components can be controlled via the control scrren generated after running the below commands
+### The components can be controlled via the control scrren generated after running the below commands
 
-###rosparam set /use_gui true
-###rosrun joint_state_publisher joint_state_publisher
+### 1. rosparam set /use_gui true
+### 2. rosrun joint_state_publisher joint_state_publisher
 
 
 
