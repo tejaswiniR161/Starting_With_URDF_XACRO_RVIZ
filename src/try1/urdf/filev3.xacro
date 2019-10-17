@@ -64,10 +64,10 @@
   </link>-->
 
 
-<joint name="one" type="continuous">
+<!--<joint name="one" type="continuous">
 <parent link="base"/>
 <child link="laser_vert_bottom"/>
-</joint>
+</joint>-->
 
 <!--<joint name="two" type="continuous">
 <parent link="base"/>
